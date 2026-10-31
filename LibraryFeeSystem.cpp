@@ -1,10 +1,15 @@
+/*
+NAME: Aron Kipkoech Langat
+REG No: CT101/G/26629/25
+GROUP B: BSc Computer Science
+*/
+
 #include <iostream>
 #include <string>
 using namespace std;
 
 class student {
-private:
-    string studentName;
+private:    string studentName;
     int admissionNumber;
     double feeBalance;
 
