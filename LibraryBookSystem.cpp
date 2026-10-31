@@ -13,32 +13,33 @@ class Book {
 
 public:
     void inputDetails() {
-        cout <<"Enter book title: ";
+        cout << "Enter book title: ";
         getline(cin, title);
 
-        cout <<"Enter author name: ";
+        cout << "Enter author name: ";
         getline(cin, author);
 
-        cout <<"Enter number of copies: ";
-        cin >>copies;
+        cout << "Enter number of copies: ";
+        cin >> copies;
     }
 
     void borrowBook() {
         if (copies > 0) {
-            cout <<"Book borrowed successfully!\n";
+            copies--;
+            cout << "Book borrowed successfully!\n";
         } else {
-            cout <<"No copies available!\n";
+            cout << "No copies available!\n";
         }
     }
 
     void displayDetails() {
-        cout<<"============================="<<endl;
-        cout <<        "--- Book Details ---";
-        cout<<"============================="<<endl;
+        cout << "=============================\n";
+        cout << "--- Book Details ---\n";
+        cout << "=============================\n";
         cout << "Title: " << title << endl;
         cout << "Author: " << author << endl;
         cout << "Copies available: " << copies << endl;
-        cout<<"============================="<<endl;
+        cout << "=============================\n";
     }
 };
 
